@@ -1,0 +1,14 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+# Route frontend API requests directly to Netlify Functions
+[[redirects]]
+  from = "/api/voices"
+  to = "/.netlify/functions/voices"
+  status = 200
+
+[[redirects]]
+  from = "/api/generate"
+  to = "/.netlify/functions/generate"
+  status = 200

@@ -1,0 +1,24 @@
+{
+  "name": "voicecraft",
+  "version": "1.0.0",
+  "description": "VoiceCraft - Secure AI Voice Generator SaaS powered by ElevenLabs and Netlify Functions",
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev",
+    "serve": "npx serve public",
+    "check": "node --check netlify/functions/voices.mjs && node --check netlify/functions/generate.mjs",
+    "test": "node test/test-functions.mjs"
+  },
+  "keywords": [
+    "elevenlabs",
+    "text-to-speech",
+    "ai-voice",
+    "netlify-functions",
+    "saas"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "netlify-cli": "^17.38.0"
+  }
+}
